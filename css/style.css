@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+#logo {
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: inline-block;
+
+    
+}
+.text-primary {
+    color: rgb(171, 184, 0);
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 0;
+}
+.obrazek {
+    max-width: 40px;
+    padding-top: 3px;
+}
+
+
+/* navbar asi */
+
+
+
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 16px 16px 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+    padding: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #navbar ul {
+        margin-top: 1rem;
+    }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
+#navbar a {color:white; text-decoration: none;}
+@media screen and (max-width: 800px) {
+    #logo {font-size: 2.5rem;}
+    .obrazek{max-width: 40px;}
+}
+
+#navbar a:hover {
+    background-color: yellow;
+    border-radius: 4px;
+    color: black;
+}
+
+
+
+/* showcase */
+#showcase {
+    background: #333 url("../img/engel.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.l-heading {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+
+}
+
+.lead {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+}
+.btn {
+    display: inline-block;
+    color: black;
+    background: yellow;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+
+}
+.btn:hover {
+    background: rgb(163, 163, 0);
+}
+.btn-dark {
+    background-color: #333;
+    color: white;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.py-1 {
+    padding: 1.5rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+
+
+
+
+/* o nas */
+#what .items {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    z-index: -1;
+}
+#what .item {
+    text-align: center;
+    padding: 1rem;
+    z-index: 0;
+}
+#what .items .item i {
+    background: yellow;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+}
+.bg-light {
+    background: rgb(128, 127, 127);
+    color: black;
+}
+.bg-dark {
+    background: #333;
+    color: white;
+}
+.py-1 {
+    padding: 1.5rem;
+}
+.py-2 {
+    padding: 2rem;
+}
+.py-3 {
+    padding: 3rem;
+}
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+video {
+    max-width: 700px;
+}
+@media screen and (max-width: 700px){
+    video { max-width: 320px;
+           max-height: 240px; 
+        }
+    
+}
+
+
+
+/* kdo jsme */
+#who {
+    display: flex;
+}
+#who div {
+    flex: 1;
+}
+#who .who-img {
+    background: url("../img/120524-science-crucifixion-130p.webp") no-repeat center/cover;
+}
+
+
+/* tabulka hrichu */ 
+table {
+    border: 0.125rem solid;
+    border-collapse: collapse;
+    background-color:var(--table-background);
+    top: 100;
+    margin-top: 60px;
+    
+}
+
+th {
+    height: 2rem;
+    width: 10%;
+    text-align: center;
+    padding: 0.188rem;
+    border: 0.125rem solid;
+    border-bottom: 0.125rem solid;
+    border-collapse: collapse;
+    background-color: yellow;
+}
+
+td {
+    height: 2rem;
+    width: 10%;
+    text-align: center;
+    padding: 0.188rem;
+    border-bottom: 0.063rem solid #ddd;
+}
+
+tr:hover {
+    background-color: lightgray;
+}
+tr {
+    margin-top: 150px;
+}
+.center {
+    margin:auto;
+    width: 50%;
+    padding:1rem;
+}
+.tabula {
+    top: 100px;
+}
+
+
+
+/* stary zakon */
+
+#zakon{
+    display: flex;
+}
+#strz {
+    background: #333 url("../img/001.The_Creation_of_Light.jpg") no-repeat center center/cover;
+    height: 200vh;
+    color: white;
+    
+}
+#strz .straz {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#showcase1 {
+    background: #333 url("../img/001.The_Creation_of_Light.jpg") no-repeat center center/cover;
+    color: white;
+    z-index: 5;
+}
+#showcase1 .showcase-content1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#showcase2 {
+    background: #333 url("../img/001.The_Creation_of_Light.jpg") no-repeat center center/cover;
+    color: white;
+    z-index: 5;
+}
+#showcase2 .showcase-content2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.kap {
+    margin-left: 10px;
+    color: white;
+    font-size: 30px;
+    margin-top: 0px;
+    padding: 0 4rem;
+    padding: 10px 30px 0px 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    
+  }
+
+  @media  screen and (max-width: 725px) {
+
+    .kap {padding: 4px;}
+    .kap {margin-top: 0px;}
+    .kap {margin-right: 10px;}
+    .kap {font-size: 15px;}
+    
+    
+  }
+
+  .knihy {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0px 30px 0px 30px;
+}
+@media screen and (max-width: 725px) {
+    .knihy {font-size: 40px;}
+
+}
+
+.upozorneni {
+    margin-top: 100px;
+    color: red;
+    font-size: 25px;
+}
+@media screen and (max-width: 725px) {
+    .upozorneni{font-size: 15px;}
+    .upozorneni {padding: 4px;}
+    .upozorneni {margin-top: 0px;}
+    .upozorneni {margin-left: 130px;}
+    .upozorneni {margin-right: 10px;}
+
+}
+.zakony_ {margin-top: 100px;
+          height: 200vh;}
+
+.btnn {
+    display: inline-block;
+    color: black;
+    background: yellow;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 60px;
+
+}
+.btnn:hover {
+    background: rgb(163, 163, 0);
+    
+}
+.btnn-dark {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+
+
+#apostolove {
+    display: block;
+    flex-direction:inherit;
+    padding: 5px;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 2rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+        margin-top: 100px;
+      }
+      .code {
+        color: white;
+        transition: color 0.3s ease-out;
+      }
+      
+      .project:hover .code {
+        color: yellow;
+      }
+      
+      .project-image {
+        height: calc(90% - 20px);
+        width: 100%;
+        object-fit: cover;
+      }
+      
+      .project-title {
+        font-size: 20px;
+        padding: 20px 0.5rem;
+      }
+      .project-title {
+        background-color: black;
+        text-align: center;
+      }
+      @media only screen and (max-width: 700px) {
+        .projects-section {padding: 6rem 1rem;}
+        }
+    
+    .project {
+        background: var(--main-gray);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+      }
+    .projects-grid1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 7rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+        margin-top: 100px;
+      }
+      .project-image1 {
+        height: calc(110% - 20px);
+        width: 100%;
+        object-fit: cover;
+      }
+      .container1 {
+        position: relative;
+        width: 100%;
+      }
+      
+      .image1 {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    
+      .overlay1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        
+      }
+      
+      .container1:hover .overlay1 {
+        opacity: 1;
+      }
+      
+      .text1 {
+        color: black;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+
+
+
+      .btn-group button {
+        background-color: yellow; /* Green background */
+        border: 1px solid gray; /* Green border */
+        color: black; /* White text */
+        padding: 10px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        float: left; /* Float the buttons side by side */
+      }
+      
+      .btn-group button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+      }
+      
+      /* Clear floats (clearfix hack) */
+      .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      /* Add a background color on hover */
+      .btn-group button:hover {
+        background-color: black;
+        color: yellow;
+      }
+
+
+
+
+      
+      #navbar2 a:hover {
+        background-color: yellow;
+        border-radius: 2px;
+        color: black;
+    }
+      #navbar2 {
+        position: fixed;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        flex-wrap: wrap;
+        width: 100%;
+        z-index: 3;
+    }
+    #navbar2 a {
+        color:white;
+        text-decoration: none;
+    }
+    #navbar2 ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    
+    #navbar2 ul li a {
+        padding: 2px;
+        margin: 0 0.25rem;
+        font-size: 19px;
+    }
+    #navbar2 ul li a:hover {
+        background-color: yellow;
+        border-radius: 2px;
+        color: black;
+    }
+    
+    @media only screen and (max-width: 725px) {
+        #navbar2 ul {
+            margin-top: 5px;
+            font-size: 10px;
+        }
+        #navbar2 ul li a {
+            font-size: 15px;
+    }
+    }
+    #navbar2 a {
+        color: white;
+    }
+    .image-wrapper{
+        display: inline-block;
+        text-align: center;
+    }
+    .textpodobr {
+        color: white;
+        font-size: 20px;
+        background-color: black;
+    }

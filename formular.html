@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blíže k Bohu </title>
+    <link rel="icon" href="./img/Logo_Vh4.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./cssform/form.css">
+    
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+        <a href="index.html"><img src="img/Logo_V4f.png" alt="" class="obrazek"> Blíže k Bohu </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html"></a>
+        <a href="./Bible.html">Bible</a>
+        <a href="./postavy.html">Postavy</a>
+        <a href="./hrichy.html"> Hříchy</a>
+        <a href="./formular.html">Formulář</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+</nav>
+    <title>Můj formulář</title>
+    </head>
+    <body>
+    
+    <h1 class="iraq">Feedback</h1>
+    
+    <form action="post.php" method="post">
+        <label for="jmeno">Jméno:</label>
+        <input type="text" id="jmeno" name="jmeno"><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+    
+        <label for="zprava">Zpráva:</label><br>
+        <textarea id="zprava" name="zprava" rows="4" cols="50"></textarea><br><br>
+    
+        
+   
+        </section>
+        <section id ="leharo">
+            <h2 class="iram">Proč jste se rozhodl/a navšívit moji stránku?</h2>
+        <div><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Nevim co tu delam</label></div>
+            <br>
+            <div><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> Kvůli informacím</label></div>
+            <br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Na doporučení od známých</label>
+          
+        </section>
+          <form>
+
+            <input type="submit" value="Odeslat">
+        </form>
+</section>
+
+
+    </body>
+    </html>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+          <p>Copyright &copy; 2023, Království Nebeské</p>
+      </div>
+  </footer>
+    <script> function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }</script>
+</body>
+</html>

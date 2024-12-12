@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Condensed:wght@700&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blíže k Bohu </title>
+    <link rel="icon" href="./img/Logo_Vh4.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="strz">
+  <nav id="navbar">
+    <div id="logo">
+        <a href="index.html">Bible | Svatá kniha </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html"></a>
+        <a href="./Bible.html">Bible</a>
+        <a href="./postavy.html">Postavy</a>
+        <a href="./hrichy.html"> Hříchy</a>
+        <a href="./formular.html">Formulář</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+</nav>
+  <div id="showcase">
+    <div class="showcase-content">
+      <div class="btn-group">
+        <a href="./matous/mt1.html"><button>Matouš</button></a>
+        <button>Marek</button>
+        <button>Lukáš</button>
+        <button>Jan</button>
+        <button>Skutky Apoštolů</button>
+      </div>
+      <p class="upozorneni">Zatím funguje jen Matouš 1</p>
+  
+  </div>
+</div>
+   <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</body>
+</html>
