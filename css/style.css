@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Pathway Gothic One', sans-serif;
+    min-height: 100vh;
 }
 #logo {
     font-weight: bold;
@@ -28,7 +29,7 @@ body {
     padding: 1rem;
     flex-wrap: wrap;
     width: 100%;
-    z-index: 0;
+    z-index: 99;
 }
 .obrazek {
     max-width: 40px;
@@ -174,6 +175,7 @@ body {
     padding: 1rem;
     overflow: hidden;
     text-align: center;
+
 }
 
 .text-center {
@@ -269,7 +271,7 @@ video {
 table {
     border: 0.125rem solid;
     border-collapse: collapse;
-    background-color:var(--table-background);
+    background-color:#333;
     top: 100;
     margin-top: 60px;
     
@@ -298,7 +300,7 @@ tr:hover {
     background-color: lightgray;
 }
 tr {
-    margin-top: 150px;
+    margin-top: 15px;
 }
 .center {
     margin:auto;
@@ -620,6 +622,7 @@ tr {
     #navbar2 a {
         color: white;
     }
+    /* postavy*/
     .image-wrapper{
         display: inline-block;
         text-align: center;
@@ -628,4 +631,28 @@ tr {
         color: white;
         font-size: 20px;
         background-color: black;
+        padding: 6px;
+        text-align: center;
     }
+#cerna {
+    background: black;
+    height: 150vh;
+}
+
+.postavyy {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px, 220px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.postavyy img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
