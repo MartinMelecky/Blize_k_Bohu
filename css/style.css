@@ -32,8 +32,10 @@ body {
     z-index: 99;
 }
 .obrazek {
-    max-width: 40px;
-    padding-top: 3px;
+    height: 40px;
+    width: 40px;
+    vertical-align: bottom;
+
 }
 
 
