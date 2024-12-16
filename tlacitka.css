@@ -26,7 +26,7 @@
 }
 
 /* Responsivní úpravy pro mobilní zařízení (šířka max 600px) */
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .button-container {
         grid-template-columns: 1fr; /* Tlačítka se zobrazí v jednom sloupci */
         padding: 5px;
@@ -38,7 +38,7 @@
 }
 
 /* Responsivní úpravy pro tablety (šířka max 900px) */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .button-container {
         grid-template-columns: repeat(2, 1fr); /* Dva sloupce */
     }
