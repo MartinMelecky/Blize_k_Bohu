@@ -434,199 +434,10 @@ tr {
     color: white;
 }
 
-
-
-
-
-
-#apostolove {
-    display: block;
-    flex-direction:inherit;
-    padding: 5px;
-    }
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 2rem;
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto;
-        margin-bottom: 6rem;
-        margin-top: 100px;
-      }
-      .code {
-        color: white;
-        transition: color 0.3s ease-out;
-      }
       
-      .project:hover .code {
-        color: yellow;
-      }
-      
-      .project-image {
-        height: calc(90% - 20px);
-        width: 100%;
-        object-fit: cover;
-      }
-      
-      .project-title {
-        font-size: 20px;
-        padding: 20px 0.5rem;
-      }
-      .project-title {
-        background-color: black;
-        text-align: center;
-      }
-      @media only screen and (max-width: 700px) {
-        .projects-section {padding: 6rem 1rem;}
-        }
-    
-    .project {
-        background: var(--main-gray);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        border-radius: 2px;
-      }
-    .projects-grid1 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 7rem;
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto;
-        margin-bottom: 6rem;
-        margin-top: 100px;
-      }
-      .project-image1 {
-        height: calc(110% - 20px);
-        width: 100%;
-        object-fit: cover;
-      }
-      .container1 {
-        position: relative;
-        width: 100%;
-      }
-      
-      .image1 {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-    
-      .overlay1 {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        
-      }
-      
-      .container1:hover .overlay1 {
-        opacity: 1;
-      }
-      
-      .text1 {
-        color: black;
-        font-size: 30px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
 
-
-
-
-
-      .btn-group button {
-        background-color: yellow; /* Green background */
-        border: 1px solid gray; /* Green border */
-        color: black; /* White text */
-        padding: 10px 24px; /* Some padding */
-        cursor: pointer; /* Pointer/hand icon */
-        float: left; /* Float the buttons side by side */
-        display: flex;
-      }
-      
-      .btn-group button:not(:last-child) {
-        border-right: none; /* Prevent double borders */
-      }
-      
-      /* Clear floats (clearfix hack) */
-      .btn-group:after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      
-      /* Add a background color on hover */
-      .btn-group button:hover {
-        background-color: black;
-        color: yellow;
-      }
-
-
-
-
-      
-      #navbar2 a:hover {
-        background-color: yellow;
-        border-radius: 2px;
-        color: black;
-    }
-      #navbar2 {
-        position: fixed;
-        background-color: black;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        flex-wrap: wrap;
-        width: 100%;
-        z-index: 3;
-    }
-    #navbar2 a {
-        color:white;
-        text-decoration: none;
-    }
-    #navbar2 ul {
-        display: flex;
-        list-style: none;
-        align-items: center;
-    }
-    
-    #navbar2 ul li a {
-        padding: 2px;
-        margin: 0 0.25rem;
-        font-size: 19px;
-    }
-    #navbar2 ul li a:hover {
-        background-color: yellow;
-        border-radius: 2px;
-        color: black;
-    }
-    
-    @media only screen and (max-width: 725px) {
-        #navbar2 ul {
-            margin-top: 5px;
-            font-size: 10px;
-        }
-        #navbar2 ul li a {
-            font-size: 15px;
-    }
-    }
-    #navbar2 a {
-        color: white;
-    }
-    /* postavy*/
-    .image-wrapper{
+/* postavy*/
+.image-wrapper{
         display: inline-block;
         text-align: center;
     }
@@ -640,18 +451,20 @@ tr {
 #cerna {
     background: black;
     height: 100vh;
-}
+} 
 
 .postavyy {
     position: absolute;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 200px));
+
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto auto auto;
     column-gap: 10px;
     row-gap: 10px;
+
     
 }
 .postavyy img {
@@ -660,12 +473,12 @@ tr {
     object-fit: cover;
     object-position: center;
 }
-@media only screen and (max-width: 800px) {
-    #navbar2 ul {
-        margin-top: 5px;
-        font-size: 10px;
-    }
-    #navbar2 ul li a {
-        font-size: 15px;
+
+@media screen and (max-width: 900px){
+    #cerna {height: 200vh;}
+    .postavyy img {width: 150px; height: 220px ;}
 }
+@media screen and (max-width: 600px){
+    #cerna {height: 200vh;}
+    .postavyy img {width: 100px; height: 170px ;}
 }
