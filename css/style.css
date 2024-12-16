@@ -552,6 +552,7 @@ tr {
         padding: 10px 24px; /* Some padding */
         cursor: pointer; /* Pointer/hand icon */
         float: left; /* Float the buttons side by side */
+        display: flex;
       }
       
       .btn-group button:not(:last-child) {
@@ -638,7 +639,7 @@ tr {
     }
 #cerna {
     background: black;
-    height: 150vh;
+    height: 100vh;
 }
 
 .postavyy {
@@ -648,13 +649,23 @@ tr {
     margin-top: 10px;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(220px, 220px));
+    grid-template-columns: repeat(auto-fill,minmax(200px, 200px));
     column-gap: 10px;
     row-gap: 10px;
+    
 }
 .postavyy img {
     width: 220px;
     height: 300px;
     object-fit: cover;
     object-position: center;
+}
+@media only screen and (max-width: 800px) {
+    #navbar2 ul {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    #navbar2 ul li a {
+        font-size: 15px;
+}
 }
