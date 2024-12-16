@@ -26,9 +26,14 @@
 }
 
 /* Responsivní úpravy pro mobilní zařízení (šířka max 600px) */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .button-container {
         grid-template-columns: 1fr; /* Tlačítka se zobrazí v jednom sloupci */
+        padding: 5px;
+    }
+    .buttan {
+        font-size: 10px;
+        padding: 5px 10px;
     }
 }
 
