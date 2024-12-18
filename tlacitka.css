@@ -1,46 +1,7 @@
 /* Základní styl pro tlačítka */
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatické sloupce */
-    gap: 5px; /* Mezery mezi tlačítky */
-    max-width: 100%; /* Maximální šířka kontejneru */
-    margin: 0 auto; /* Vycentrování */
-    padding: 10px; /* Vnitřní okraje */
-}
-
-.buttan {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: yellow;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    white-space: nowrap; /* Zabráňuje zalomení textu */
-    width: 100%; /* Tlačítka se roztáhnou na 100% šířky sloupce */
-}
-
-.buttan:hover {
-    background-color: rgb(163, 163, 0) ;
-}
-
-/* Responsivní úpravy pro mobilní zařízení (šířka max 600px) */
-@media screen and (max-width: 700px) {
-    .button-container {
-        grid-template-columns: repeat(2, 1fr); /* Tlačítka se zobrazí v jednom sloupci */
-        padding: 5px;
-    }
-    .buttan {
-        font-size: 18px;
-        padding: 10px 10px;
-        width: 80%
-    }
-}
-
-/* Responsivní úpravy pro tablety (šířka max 900px) */
-@media screen and (max-width: 900px) {
-    .button-container {
-        grid-template-columns: repeat(2, 1fr); /* Dva sloupce */
-    }
-}
+.button-container {display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 5px; max-width: 100%; margin: 0 auto; padding: 10px;}
+.buttan {padding: 10px 20px; font-size: 16px; background-color: yellow; color: black; border: none; border-radius: 5px; cursor: pointer; text-align: center; white-space: nowrap; width: 100%; }
+.buttan:hover {background-color: rgb(163, 163, 0) ;}
+@media screen and (max-width: 700px) {.button-container {grid-template-columns: repeat(2, 1fr); padding: 5px;}
+                                      .buttan {font-size: 18px; padding: 10px 10px; width: 80%}}
+@media screen and (max-width: 900px) {.button-container {grid-template-columns: repeat(2, 1fr);}}
