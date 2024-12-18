@@ -141,6 +141,10 @@ color: black;
 .text-center {
     text-align: center;
 }
+.text-center-bily {
+    text-align: center;
+    color: white;
+}
 .m-heading {
     font-size: 2rem;
     margin-bottom: 0.75rem;
@@ -274,6 +278,7 @@ tr {
     display: flex;
     top: 50px;
     flex-wrap: wrap;
+
 }
 
 
@@ -409,10 +414,18 @@ tr {
         text-align: center;
         text-decoration: none;
     }
+    .textpodober a {
+        text-decoration: none;
+    }
 #cerna {
     background: black;
     height: 400vh;
 } 
+#cerna h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
 
 .postavyy {
     position: absolute;
@@ -450,6 +463,11 @@ tr {
     width: 50%;
     padding: 10px;
     height: 400px; 
+    font-size:large;
+    border: 0.125rem solid;
+    border-collapse: collapse;
+    border-color: yellow;
+    background-color: #b4b4b4;
   }
   
 
@@ -458,7 +476,7 @@ tr {
     display: table;
     clear: both;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .column {
       width: 100%;
     }
