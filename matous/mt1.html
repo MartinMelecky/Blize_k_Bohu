@@ -12,23 +12,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <div>
-    <nav id="navbar">
-            <div id="logo">
-              <a href="../index.html"><img src="../img/logo ctverec.svg" alt="" class="obrazek"> Blíže k Bohu </a>
-          </div>
-          <div class="topnav" id="myTopnav">
-              <a href="../index.html"></a>
-              <a href="../Bible.html">Bible</a>
-              <a href="../postavy.html">Postavy</a>
-              <a href="../hrichy.html"> Hříchy</a>
-              <a href="../formular.html">Formulář</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-    </nav>
-
-    
+  <nav id="navbar">
+    <div id="logo">
+        <a href="../index.html"><img src="../img/logo ctverec.svg" alt="" class="obrazek"> Blíže k Bohu</a>
+        </div>
+    <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="toggler" name="">
+    <div class="topnav">
+        <ul class="lisst">
+        <li><a href="../Bible.html">Bible</a></li>
+        <li><a href="../modlitby.html">Modlitby</a></li>
+        <li><a href="../postavy.html">Postavy</a></li>
+        <li><a href="../hrichy.html"> Hříchy</a></li>
+        <li><a href="../formular.html">Formulář</a></li>
+        </ul>
+      </div>
+</nav>
     <div id="showcase1">
       <div class="showcase-content1">
         <h3 class="knihy">Matouš 1</h3>
@@ -69,29 +68,7 @@
     </footer>
 
    <script>
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-    function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+
     </script>
 </body>
 </html>

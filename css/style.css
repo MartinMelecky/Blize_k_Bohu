@@ -40,7 +40,7 @@ body {
 }
 
 /* navbar asi */
-/* Style the links inside the navigation bar */
+
 .topnav a {
     text-decoration: none;
     float: left;
@@ -400,16 +400,14 @@ tr {
       
 
 /* postavy*/
-.image-wrapper{
-        display: inline-block;
-        text-align: center;
-    }
+
     .textpodobr {
         color: white;
         font-size: 20px;
         background-color: black;
         padding: 6px;
         text-align: center;
+        text-decoration: none;
     }
 #cerna {
     background: black;
@@ -451,10 +449,10 @@ tr {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 400px; /* Should be removed. Only for demonstration */
+    height: 400px; 
   }
   
-  /* Clear floats after the columns */
+
   .row:after {
     content: "";
     display: table;
