@@ -1,13 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Pathway+Gothic+One&family=Raleway:wght@100&family=Roboto:wght@100;300&display=swap');
 
-body {background-color: rgb(19, 19, 19); text-align: center;}
-form {background: #616264; max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid rgb(255, 204, 0); border-radius: 5px; margin-bottom: 60px;}
-label {display: block; font-weight: bold; margin-top: 10px; color: white; border: black;}
-input[type="text"],
-input[type="email"],
-textarea {width: 100%; padding: 10px; margin: 6px 0; border: 1px solid rgb(0, 0, 0); border-radius: 3px;}
-input[type="submit"] {background: black; color: rgb(255, 255, 255); border: 0; padding: 10px 20px; cursor: pointer; border-radius: 3px; margin-top: 10px;}
-input[type="submit"]:hover {background: yellow; color: rgb(0, 0, 0);}
-.iraq {text-align: center; border-color: black; border: 2px; color: yellow; font-size: 40px; margin-top: 10px;}
-.iran {text-align: center; border-color: black; border: 2px; color: rgb(255, 255, 255); margin-top: 20px; font-size: xx-large;}
-.iram {text-align: center; border-color: black; border: 2px; color: yellow; font-size: xx-large; margin-top: 10px;}
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid yellow;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid 9; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Pathway Gothic One', sans-serif;
+  width: 100%;
+  background:yellow;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:black;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:rgb(171, 184, 0); }
