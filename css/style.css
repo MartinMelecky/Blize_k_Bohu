@@ -411,10 +411,11 @@ tr {
     position: absolute;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
+
+    
     grid-template-columns: auto auto auto auto auto auto;
     column-gap: 10px;
     row-gap: 10px;
