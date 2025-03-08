@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
 * {
     margin: 0;
@@ -399,7 +400,7 @@ tr {
     }
 #cerna {
     background: black;
-    height: 400vh;
+    min-height: auto;
 } 
 #cerna h1 {
     text-align: center;
